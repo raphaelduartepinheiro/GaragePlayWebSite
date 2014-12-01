@@ -1,0 +1,336 @@
+html{
+    min-height: 100%
+}
+body{
+  background-image:url("../images/bg.jpg");
+    background-repeat: repeat-y;
+    width: 100%;
+}
+#global_conteudo{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  float: left;
+}
+.conteudo{
+  width: 100%;
+  margin: 0 auto;
+}
+header{
+  text-align: center;
+  background: url("../images/img1.jpg") no-repeat scroll center 0 transparent;
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.tela1{
+
+}
+.frase {
+  color: #fff;
+  display: block;
+  font-family: "Conv_Gotham-Book";
+  font-size: 5.33rem;
+  line-height: 38px;
+  margin: 0 0 45px;
+  padding: 191px 0 0;
+  width: 100%;
+}
+.autor{
+font-size: 2.66rem;
+font-family: "Conv_Gotham-Bold";
+color: #fff;
+line-height: 25px;
+display: block;
+width: 100%;
+}
+.logo-g {
+  display: block;
+  margin: 412px 0 238px;
+  text-indent: -9999px;
+}
+
+main {
+  float: left;
+}
+
+.bloco1{
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
+.quadrado {
+margin: 168px 0;
+}
+
+.bloco2 {
+  background-color: #782324;
+  float: left;
+  width: 100%;
+}
+.frase2{
+font-family: "Conv_Gotham-Book";
+font-size:5.33rem;
+color: #fff;
+text-align: center;
+padding: 214px 0;
+}
+.bloco3 {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.tools1 {
+  float: left;
+  height: 437px;
+  margin: 305px 0 162px;
+  position: relative;
+  width: 454px;
+}
+.ferramenta1 {
+  display: block;
+  left: 50%;
+  margin-left: -141px;
+  position: absolute;
+}
+
+.tools1 p {
+  color: #000;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 3.16rem;
+  line-height: 38px;
+  padding-top: 304px;
+  text-align: center;
+}
+.tools2{
+  width: 428px;
+  height: 483px;
+  float: left;
+  margin: 305px 0px 162px 0px;
+  position: relative;
+}
+.ferramenta2 {
+  left: 50%;
+  margin-left: -113px;
+  position: absolute;
+}
+.tools2 p {
+  color: #000;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 3.16rem;
+  line-height: 38px;
+  padding-top: 304px;
+  text-align: center;
+}
+.tools3 {
+  float: left;
+  height: 492px;
+  margin: 305px 0px 162px 0;
+  position: relative;
+  width: 534px;
+}
+.ferramenta3 {
+  left: 50%;
+  margin-left: -68px;
+  position: absolute;
+}
+.tools3 p{
+  font-family: "Conv_Gotham-Medium";
+  font-size: 3.16rem;
+  color: #000;
+  text-align: center;
+  padding-top: 304px;
+  line-height: 38px;
+}
+.chave{
+  float: left;
+  margin-left: 204px;
+}
+.garage{
+  width: 100%;
+  height: 1200px;
+  display: block;
+}
+.listra {
+  background-color: #413233;
+  float: left;
+  height: 118px;
+  margin-bottom: 282px;
+  margin-top: 245px;
+  width: 100%;
+}
+.logo{
+  float: left;
+  margin-left: 522px;
+  margin-top: -60px;
+}
+.listra p {
+  color: #fff;
+  float: left;
+  font-family: "Conv_Gotham-Book";
+  font-size: 7rem;
+  letter-spacing: -5px;
+  margin: 10px 0 0;
+  text-transform: uppercase;
+}
+footer {
+  background-color: #782324;
+  float: left;
+  width: 100%;
+}
+.inscreva {
+  color: #fff;
+  font-family: "Conv_Gotham-Book";
+  font-size: 3.16rem;
+  padding: 125px 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+
+/*---------------------------------------MEDIAQUERY----------------------------------------------*/
+
+/*GARAGEPLAY LOGO NO FOOTER*/
+@media screen and (min-width: 970px) and (max-width: 1200px) {
+
+body{
+font-size: 11px !important;
+}
+
+}
+@media screen and (min-width: 1725px) and (max-width: 1875px) {
+
+.listra{
+height: 109px;
+}
+.listra p{
+margin: 4px 0 0 0;
+}
+
+}
+
+@media screen and (min-width: 1625px) and (max-width: 1725px) {
+
+.listra{
+height: 97px;
+}
+.listra p{
+margin: -3px 0 0 0;
+}
+
+}
+
+@media screen and (min-width: 1525px) and (max-width: 1625px) {
+
+.listra{
+height: 85px;
+}
+.listra p{
+margin: -1px 0 0 0;
+font-size: 6rem;
+}
+
+}
+
+@media screen and (min-width: 1425px) and (max-width: 1525px) {
+
+.listra{
+height: 72px;
+}
+.listra p {
+  font-size: 5.5rem;
+  margin: -4px 0 0;
+}
+
+}
+@media screen and (min-width: 1325px) and (max-width: 1425px) {
+
+.listra{
+height: 68px;
+}
+.listra p {
+  font-size: 5rem;
+  margin: -1px 0 0;
+}
+.logo {
+  margin-top: -53px;
+}
+
+}
+@media screen and (min-width: 1280px) and (max-width: 1325px) {
+
+.listra{
+height: 58px;
+}
+.listra p {
+  font-size: 4.8rem;
+  margin: -6px 0 0;
+}
+.logo {
+  margin-top: -53px;
+}
+
+}
+@media screen and (min-width: 1200px) and (max-width: 1280px) {
+
+.listra{
+height: 48px;
+}
+.listra p {
+  font-size: 4rem;
+  margin: -5px 0 0;
+}
+.logo {
+  margin-top: -50px;
+}
+
+}
+/*..........................FIM GARAGEPLAY LOGO NO FOOTER..........................*/
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
+.ferramenta1 {
+  width: 225px;
+  margin-left: -115px;
+}
+.ferramenta2 {
+  width: 190px;
+  margin-left: -98px;
+}
+.ferramenta3 {
+  width: 112px;
+  margin-left: -60px;
+}
+.tools1 p {
+  font-size: 2.56rem;
+  padding-top: 244px;
+}
+.tools2 p {
+  font-size: 2.56rem;
+  padding-top: 244px;
+}
+.tools3 p {
+  font-size: 2.56rem;
+  padding-top: 244px;
+}
+.frase2 {
+  font-size: 4.53rem;
+  padding: 134px 0;
+}
+.inscreva {
+  font-size: 2.36rem;
+  margin: 0;
+  padding: 55px 0;
+
+}
+.autor {
+  font-size: 2.36rem;
+}
+.frase {
+  font-size: 4.53rem;
+}
+
