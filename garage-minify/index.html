@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html ng-app="GaragePlay" lang="">
+<head>
+  <meta charset="UTF-8">
+
+  <meta property="og:url" content="http://www.garageplay.net/">
+   
+  <meta property="og:title" content="Conheça o GaragePlay">
+  <meta property="og:site_name" content="GaragePlay">
+   
+  <meta property="og:description" content="Acompanhe cada passo de sua banda. Um App feito por músicos, para músicos.">
+  
+  <meta property="og:image" content="http://www.garageplay.net/logo.jpg">
+  <meta property="og:image:type" content="image/jpg">
+  <meta property="og:image:width" content="600"> 
+  <meta property="og:image:height" content="400"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <!--STYLESHEET -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="fontes/fontes.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!--SCRIPT -->
+  <script src="javascript/jquery-1.11.1.js"></script>
+  <script src="javascript/bootstrap.min.js"></script>
+  <script src="javascript/app.js"></script>
+  <script src="javascript/Register.js"></script>
+  
+  <title>GaragePlay</title> 
+</head>
+
+<body>
+  <div id="global_conteudo"> <!-- GLOBAL CONTENT -->
+    <div class="conteudo">
+      <header>
+          <p class="frase">“Sem a música, a vida seria um erro.”</p>
+          <p class="autor">Friedrich Nietzsche</p>
+          <img src="images/logo-g.png" alt="" class="logo-g col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-2 col-xs-offset-5">
+
+          <section class="store">
+            <p class="apples"><a href="#" class="apple">Apple Store</a></p>
+             <p class="googles">
+              <a href="#" class="google">Google Play</a></p>
+          </section>
+      </header>
+    <div class="inscreva-se">
+       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title inscreva">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Inscreva-se aqui
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <div class="row ng-scope" ng-controller="RegisterController">
+          <div class="col-md-4 col-md-offset-4" id="login" ng-hide="user.registered">
+            <form ng-submit="register()" name="registerForm" class="ng-pristine ng-invalid ng-invalid-required">
+              <div class="form-group" for="nome">
+                  <input type="text" required="" maxlength="30" class="form-control ng-pristine ng-invalid ng-invalid-required" placeholder="Seu nome" id="name" ng-model="user.name">
+              </div>
+
+              <div class="form-group" for="email">
+                  <input type="email" required="" maxlength="40" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-email" placeholder="Ex: fulano@mail.com" id="email" ng-model="user.email">
+              </div>  
+              <button class="btn btn-dark" type="submit">Enviar</button>
+            </form>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <main>
+      <div class="bloco1">
+        <img src="images/descricao.png" alt="Molhor site para musicos" class="quadrado col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+      </div>
+      <div class="bloco2">
+        <p class="frase2">Tudo que sua banda precisa num único lugar.</p>
+      </div>
+      <div class="bloco3 col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+        <iframe width="300" height="168" src="//www.youtube.com/embed/kdJdO5_vMzg" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="garage">
+        <a href="" class="listra col-lg-12 col-md-12
+        col-sm-12 col-xs-12">
+          <img src="images/logo.png" alt="" class="logo col-lg-2 col-lg-offset-3 col-md-2 col-md-offset-3 col-sm-2 col-sm-offset-3 col-xs-2 col-xs-offset-3">
+          <p class="logo">garage<span>play</span></p>
+        </a>
+      </div>
+
+      <div class="bloco4">
+        <section class="tools1 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="images/tools1.png" alt="Gerencie" class="ferramenta1">
+          <p>Ferramentas para
+            gerenciar e promover
+            a sua banda.</p>
+        </section>
+        <section class="tools2 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="images/tools2.png" alt="Acompanhe" class="ferramenta2">
+          <p>Acompanhe o
+            desenvolvimento e a
+            repercussão do seu
+            trabalho.</p>
+        </section>
+        <section class="tools3 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="images/tools3.png" alt="Promova" class="ferramenta3">
+          <p>Aumente a
+            visibilidade da sua banda
+            e coloque-a em contato
+            com gente grande.</p>
+        </section>
+        <img src="images/chave.png" alt="" class="chave col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+      </div>
+      
+    </main>
+    <footer>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title inscreva2">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+          Inscreva-se aqui
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <div class="row ng-scope" ng-controller="RegisterController">
+    <div class="col-md-4 col-md-offset-4" id="login" ng-hide="user.registered">
+      <form ng-submit="register()" name="registerForm" class="ng-pristine ng-invalid ng-invalid-required">
+        <div class="form-group" for="nome">
+            <input type="text" required="" maxlength="30" class="form-control ng-pristine ng-invalid ng-invalid-required" placeholder="Seu nome" id="name" ng-model="user.name">
+        </div>
+
+        <div class="form-group" for="email">
+            <input type="email" required="" maxlength="40" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-email" placeholder="Ex: fulano@mail.com" id="email" ng-model="user.email">
+        </div>  
+        <button class="btn btn-dark" type="submit">Enviar</button>
+      </form>
+    </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+  </div> <!-- FECHA GLOBAL CONTENT -->
+</body>
+</html>
+<!-- Script AngularJS -->
+  <script src="javascript/angulartics.js"></script>
+  <script src="javascript/angulartics-ga.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
